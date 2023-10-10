@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SkyCast</title>
+    <title>SkyCast | The Weather App</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="images/30.png" type="image/x-icon" />
     <link
@@ -16,28 +16,25 @@
   </head>
   <body>
     <div class="card">
-      <!-- For Displaying Date -->
+
+      <!-- For Displaying Day -->
       <div class="day">
         <h1><span id="day"></span></h1>
       </div>
+
+      <!-- For displaying Date -->
       <div class="date">
         <h1><span id="date"></span></h1>
       </div>
 
       <!-- For displaying the search bar -->
-      <!-- <form action="#" class="search-form">
-        <button type="submit" class="search-btn">
-          <i class="fa-solid fa-search"></i>
-        </button>
-        <input type="text" placeholder="Search" />
-      </form> -->
       <div class="search">
-        <!-- <button> <i class="fa-solid fa-search"></i></button> -->
         <button type="submit" class="search-btn">
           <i class="fa-solid fa-search"></i>
         <input type="text" placeholder="enter city name" spellcheck="false">
       </div>
 
+      <!-- For displaying Invalid City Name -->
       <div class="error">
         <p>Invalid City Name</p>
       </div>
@@ -51,14 +48,14 @@
         <!-- For displaying details -->
         <div class="details">
           <div class="col">
-            <img src="images/6.png" alt="" />
+            <img src="images/humidity.png" alt="" />
             <div>
               <p class="humidity">50%</p>
               <p>Humidity</p>
             </div>
           </div>
           <div class="col">
-            <img src="images/4.png" alt="" />
+            <img src="images/wind.png" alt="" />
             <div>
               <p class="wind">15 kmph</p>
               <p>Wind Speed</p>
@@ -66,7 +63,9 @@
           </div>
         </div>
       </div>
+
     </div>
+    
     <script src="script.js"></script>
   </body>
 </html>
