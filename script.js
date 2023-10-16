@@ -67,7 +67,7 @@ async function checkWeather(city) {
     } else if (data.weather[0].main === "Mist") {
       weatherIcon.src = `images/mist_${timeOfDay}.png`;
     } else if (data.weather[0].main === "Snow") {
-      weatherIcon.src = `images/snow_${timeOfDay}.png`;
+      weatherIcon.src = `images/rain_${timeOfDay}.png`;
     }
     document.querySelector(".weather").style.display = "block";
   }
